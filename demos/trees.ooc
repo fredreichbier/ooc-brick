@@ -48,12 +48,12 @@ main: func {
     
     cx := 0
     cy := 0
-    io: StructInput
+    io: Input
 
     while(true) {
         IO fetch(0, io&)
-        cx += io hat[0] as StructVector x // TODO ... eek
-        cy += io hat[0] as StructVector y // TODO
+        cx += io hat[0] x
+        cy += io hat[0] y
         cx = limit(20, cx, 200)
         layers[0] setCamera(cx/2, 0)
         for(i in 1..LAYER_CT)

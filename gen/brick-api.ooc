@@ -411,35 +411,35 @@ StructColor: cover from struct color {
     a: extern UChar
 }
 
-Convolution: cover from StructConvolution
+Convolution: cover from StructConvolution extends StructConvolution
 
-Point: cover from StructPoint
+Point: cover from StructPoint extends StructPoint
 
-Vector: cover from StructVector
+Vector: cover from StructVector extends StructVector
 
-Input: cover from StructInput
+Input: cover from StructInput extends StructInput
 
-String_: cover from StructString_
+String_: cover from StructString_ extends StructString_
 
-SpriteCollision: cover from StructSpriteCollision
+SpriteCollision: cover from StructSpriteCollision extends StructSpriteCollision
 
-Mouse: cover from StructMouse
+Mouse: cover from StructMouse extends StructMouse
 
-Element: cover from StructElement
+Element: cover from StructElement extends StructElement
 
-Iterator: cover from StructIterator
+Iterator: cover from StructIterator extends StructIterator
 
-Mcp: cover from StructMcp
+Mcp: cover from StructMcp extends StructMcp
 
-Dimensions: cover from StructDimensions
+Dimensions: cover from StructDimensions extends StructDimensions
 
-MapFragment: cover from StructMapFragment
+MapFragment: cover from StructMapFragment extends StructMapFragment
 
-Box: cover from StructBox
+Box: cover from StructBox extends StructBox
 
-MapCollision: cover from StructMapCollision
+MapCollision: cover from StructMapCollision extends StructMapCollision
 
-Color: cover from StructColor
+Color: cover from StructColor extends StructColor
 
 layer_get_camera: extern func (arg0: Int, arg1: Int*, arg2: Int*) -> Int
 tile_get_collides: extern func (arg0: Tile, arg1: Int*) -> Int
