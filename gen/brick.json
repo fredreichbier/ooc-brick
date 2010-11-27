@@ -1,0 +1,7783 @@
+[
+  [
+    "STRUCT(list)", 
+    {
+      "members": [
+        [
+          "head", 
+          "POINTER(element)", 
+          null
+        ], 
+        [
+          "tail", 
+          "POINTER(element)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(list)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 198, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "list"
+    }
+  ], 
+  [
+    "STRUCT(convolution)", 
+    {
+      "members": [
+        [
+          "kw", 
+          "int", 
+          null
+        ], 
+        [
+          "kh", 
+          "int", 
+          null
+        ], 
+        [
+          "kernel", 
+          "ARRAY(char, 49)", 
+          null
+        ], 
+        [
+          "divisor", 
+          "int", 
+          null
+        ], 
+        [
+          "offset", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(convolution)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 209, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "convolution"
+    }
+  ], 
+  [
+    "STRUCT(point)", 
+    {
+      "members": [
+        [
+          "x", 
+          "int", 
+          null
+        ], 
+        [
+          "y", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(point)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 202, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "point"
+    }
+  ], 
+  [
+    "STRUCT(vector)", 
+    {
+      "members": [
+        [
+          "x", 
+          "int", 
+          null
+        ], 
+        [
+          "y", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(vector)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 203, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "vector"
+    }
+  ], 
+  [
+    "STRUCT(sound)", 
+    {
+      "members": [
+        [
+          "wave", 
+          "POINTER(void)", 
+          null
+        ], 
+        [
+          "buf", 
+          "POINTER(unsigned char)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(sound)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 360, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "sound"
+    }
+  ], 
+  [
+    "STRUCT(input)", 
+    {
+      "members": [
+        [
+          "axis", 
+          "ARRAY(int, 8)", 
+          null
+        ], 
+        [
+          "hat", 
+          "ARRAY(vector, 4)", 
+          null
+        ], 
+        [
+          "button", 
+          "ARRAY(int, 20)", 
+          null
+        ], 
+        [
+          "space", 
+          "int", 
+          null
+        ], 
+        [
+          "tab", 
+          "int", 
+          null
+        ], 
+        [
+          "sel", 
+          "int", 
+          null
+        ], 
+        [
+          "pause", 
+          "int", 
+          null
+        ], 
+        [
+          "esc", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(input)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 375, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "input"
+    }
+  ], 
+  [
+    "STRUCT(string)", 
+    {
+      "members": [
+        [
+          "font", 
+          "ARRAY(char, 50)", 
+          null
+        ], 
+        [
+          "x", 
+          "int", 
+          null
+        ], 
+        [
+          "y", 
+          "int", 
+          null
+        ], 
+        [
+          "text", 
+          "ARRAY(char, 240)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(string)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 318, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "string"
+    }
+  ], 
+  [
+    "STRUCT(sprite_collision)", 
+    {
+      "members": [
+        [
+          "mode", 
+          "int", 
+          null
+        ], 
+        [
+          "dir", 
+          "vector", 
+          null
+        ], 
+        [
+          "stop", 
+          "vector", 
+          null
+        ], 
+        [
+          "target", 
+          "POINTER(void)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(sprite_collision)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 341, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "sprite_collision"
+    }
+  ], 
+  [
+    "STRUCT(sprite)", 
+    {
+      "members": [
+        [
+          "frame_ct", 
+          "int", 
+          null
+        ], 
+        [
+          "cur_frame", 
+          "int", 
+          null
+        ], 
+        [
+          "collides", 
+          "int", 
+          null
+        ], 
+        [
+          "z_hint", 
+          "int", 
+          null
+        ], 
+        [
+          "pos", 
+          "point", 
+          null
+        ], 
+        [
+          "vel", 
+          "vector", 
+          null
+        ], 
+        [
+          "frames", 
+          "POINTER(STRUCT(framestack))", 
+          null
+        ], 
+        [
+          "bound", 
+          "POINTER(box)", 
+          null
+        ], 
+        [
+          "bc", 
+          "box", 
+          null
+        ], 
+        [
+          "motion", 
+          "mcp", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(sprite)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 252, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "sprite"
+    }
+  ], 
+  [
+    "STRUCT(framestack)", 
+    {
+      "members": [
+        [
+          "len", 
+          "int", 
+          null
+        ], 
+        [
+          "stack", 
+          "POINTER(POINTER(frame))", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(framestack)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 262, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "framestack"
+    }
+  ], 
+  [
+    "STRUCT(font)", 
+    {
+      "members": [
+        [
+          "name", 
+          "ARRAY(char, 50)", 
+          null
+        ], 
+        [
+          "w", 
+          "int", 
+          null
+        ], 
+        [
+          "h", 
+          "int", 
+          null
+        ], 
+        [
+          "chars", 
+          "ARRAY(POINTER(STRUCT(frame)), 128)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(font)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 311, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "font"
+    }
+  ], 
+  [
+    "STRUCT(mouse)", 
+    {
+      "members": [
+        [
+          "x", 
+          "int", 
+          null
+        ], 
+        [
+          "y", 
+          "int", 
+          null
+        ], 
+        [
+          "button", 
+          "ARRAY(int, 7)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(mouse)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 383, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "mouse"
+    }
+  ], 
+  [
+    "STRUCT(frame)", 
+    {
+      "members": [
+        [
+          "w", 
+          "int", 
+          null
+        ], 
+        [
+          "h", 
+          "int", 
+          null
+        ], 
+        [
+          "tag", 
+          "int", 
+          null
+        ], 
+        [
+          "data", 
+          "POINTER(void)", 
+          null
+        ], 
+        [
+          "aux", 
+          "POINTER(void)", 
+          null
+        ], 
+        [
+          "scratch", 
+          "POINTER(unsigned char)", 
+          null
+        ], 
+        [
+          "mask", 
+          "POINTER(unsigned char)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(frame)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 234, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "frame"
+    }
+  ], 
+  [
+    "STRUCT(element)", 
+    {
+      "members": [
+        [
+          "data", 
+          "POINTER(void)", 
+          null
+        ], 
+        [
+          "next", 
+          "POINTER(STRUCT(element))", 
+          null
+        ], 
+        [
+          "prev", 
+          "POINTER(STRUCT(element))", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(element)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 197, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "element"
+    }
+  ], 
+  [
+    "STRUCT(iterator)", 
+    {
+      "members": [
+        [
+          "my_l", 
+          "POINTER(list)", 
+          null
+        ], 
+        [
+          "my_el", 
+          "POINTER(element)", 
+          null
+        ], 
+        [
+          "ct", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(iterator)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 218, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "iterator"
+    }
+  ], 
+  [
+    "STRUCT(map)", 
+    {
+      "members": [
+        [
+          "tw", 
+          "int", 
+          null
+        ], 
+        [
+          "th", 
+          "int", 
+          null
+        ], 
+        [
+          "tiles", 
+          "ARRAY(POINTER(tile), 4096)", 
+          null
+        ], 
+        [
+          "w", 
+          "int", 
+          null
+        ], 
+        [
+          "h", 
+          "int", 
+          null
+        ], 
+        [
+          "data", 
+          "POINTER(short int)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(map)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 293, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "map"
+    }
+  ], 
+  [
+    "STRUCT(mcp)", 
+    {
+      "members": [
+        [
+          "code", 
+          "POINTER(unsigned char)", 
+          null
+        ], 
+        [
+          "tick", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(mcp)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 210, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "mcp"
+    }
+  ], 
+  [
+    "STRUCT(dimensions)", 
+    {
+      "members": [
+        [
+          "w", 
+          "int", 
+          null
+        ], 
+        [
+          "h", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(dimensions)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 204, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "dimensions"
+    }
+  ], 
+  [
+    "STRUCT(tile)", 
+    {
+      "members": [
+        [
+          "anim_type", 
+          "int", 
+          null
+        ], 
+        [
+          "frame_ct", 
+          "int", 
+          null
+        ], 
+        [
+          "cur_frame", 
+          "int", 
+          null
+        ], 
+        [
+          "collides", 
+          "int", 
+          null
+        ], 
+        [
+          "frames", 
+          "POINTER(POINTER(STRUCT(frame)))", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(tile)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 281, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "tile"
+    }
+  ], 
+  [
+    "STRUCT(map_fragment)", 
+    {
+      "members": [
+        [
+          "w", 
+          "int", 
+          null
+        ], 
+        [
+          "h", 
+          "int", 
+          null
+        ], 
+        [
+          "tiles", 
+          "POINTER(short int)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(map_fragment)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 349, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "map_fragment"
+    }
+  ], 
+  [
+    "STRUCT(box)", 
+    {
+      "members": [
+        [
+          "x1", 
+          "int", 
+          null
+        ], 
+        [
+          "y1", 
+          "int", 
+          null
+        ], 
+        [
+          "x2", 
+          "int", 
+          null
+        ], 
+        [
+          "y2", 
+          "int", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(box)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 205, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "box"
+    }
+  ], 
+  [
+    "STRUCT(map_collision)", 
+    {
+      "members": [
+        [
+          "mode", 
+          "int", 
+          null
+        ], 
+        [
+          "stop", 
+          "vector", 
+          null
+        ], 
+        [
+          "go", 
+          "vector", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(map_collision)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 334, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "map_collision"
+    }
+  ], 
+  [
+    "STRUCT(color)", 
+    {
+      "members": [
+        [
+          "r", 
+          "unsigned char", 
+          null
+        ], 
+        [
+          "g", 
+          "unsigned char", 
+          null
+        ], 
+        [
+          "b", 
+          "unsigned char", 
+          null
+        ], 
+        [
+          "a", 
+          "unsigned char", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(color)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 206, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "name": "color"
+    }
+  ], 
+  [
+    "list", 
+    {
+      "tag": "list", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 198, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(list)"
+    }
+  ], 
+  [
+    "convolution", 
+    {
+      "tag": "convolution", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 209, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(convolution)"
+    }
+  ], 
+  [
+    "point", 
+    {
+      "tag": "point", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 202, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(point)"
+    }
+  ], 
+  [
+    "vector", 
+    {
+      "tag": "vector", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 203, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(vector)"
+    }
+  ], 
+  [
+    "sound", 
+    {
+      "tag": "sound", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 364, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(sound)"
+    }
+  ], 
+  [
+    "input", 
+    {
+      "tag": "input", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 380, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(input)"
+    }
+  ], 
+  [
+    "string", 
+    {
+      "tag": "string", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 322, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(string)"
+    }
+  ], 
+  [
+    "event", 
+    {
+      "tag": "event", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 211, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "POINTER(FUNCTIONTYPE(void, POINTER(void)))"
+    }
+  ], 
+  [
+    "sprite_collision", 
+    {
+      "tag": "sprite_collision", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 346, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(sprite_collision)"
+    }
+  ], 
+  [
+    "sprite", 
+    {
+      "tag": "sprite", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 271, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(sprite)"
+    }
+  ], 
+  [
+    "font", 
+    {
+      "tag": "font", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 315, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(font)"
+    }
+  ], 
+  [
+    "mouse", 
+    {
+      "tag": "mouse", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 386, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(mouse)"
+    }
+  ], 
+  [
+    "frame", 
+    {
+      "tag": "frame", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 245, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(frame)"
+    }
+  ], 
+  [
+    "element", 
+    {
+      "tag": "element", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 197, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(element)"
+    }
+  ], 
+  [
+    "iterator", 
+    {
+      "tag": "iterator", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 218, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(iterator)"
+    }
+  ], 
+  [
+    "map", 
+    {
+      "tag": "map", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 301, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(map)"
+    }
+  ], 
+  [
+    "mcp", 
+    {
+      "tag": "mcp", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 210, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(mcp)"
+    }
+  ], 
+  [
+    "dimensions", 
+    {
+      "tag": "dimensions", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 204, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(dimensions)"
+    }
+  ], 
+  [
+    "tile", 
+    {
+      "tag": "tile", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 289, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(tile)"
+    }
+  ], 
+  [
+    "map_fragment", 
+    {
+      "tag": "map_fragment", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 352, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(map_fragment)"
+    }
+  ], 
+  [
+    "box", 
+    {
+      "tag": "box", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 205, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(box)"
+    }
+  ], 
+  [
+    "map_collision", 
+    {
+      "tag": "map_collision", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 338, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(map_collision)"
+    }
+  ], 
+  [
+    "color", 
+    {
+      "tag": "color", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 206, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "target": "STRUCT(color)"
+    }
+  ], 
+  [
+    "tile_set_collides", 
+    {
+      "name": "tile_set_collides", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 467, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_set_collides", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_nans", 
+    {
+      "name": "__builtin_nans", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 21, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_nans", 
+      "arguments": [
+        [
+          "str", 
+          "POINTER(CONST(char))"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_acosf", 
+    {
+      "name": "__builtin_acosf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 25, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_acosf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_acosl", 
+    {
+      "name": "__builtin_acosl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 26, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_acosl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_add_frame_data", 
+    {
+      "name": "tile_add_frame_data", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 464, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "tile_add_frame_data", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "int"
+        ], 
+        [
+          "arg4", 
+          "POINTER(void)"
+        ], 
+        [
+          "arg5", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_va_arg_pack", 
+    {
+      "name": "__builtin_va_arg_pack", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 145, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_va_arg_pack", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_log10", 
+    {
+      "name": "__builtin_log10", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 63, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_log10", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_popcountll", 
+    {
+      "name": "__builtin_popcountll", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 101, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "int", 
+      "tag": "__builtin_popcountll", 
+      "arguments": [
+        [
+          "arg0", 
+          "long long int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_add", 
+    {
+      "name": "layer_add", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 425, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_add", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_clogf", 
+    {
+      "name": "__builtin_clogf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 111, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_clogf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_clogl", 
+    {
+      "name": "__builtin_clogl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 113, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_clogl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_get_size", 
+    {
+      "name": "map_get_size", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 450, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "map_get_size", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cexpf", 
+    {
+      "name": "__builtin_cexpf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 108, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_cexpf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cexpl", 
+    {
+      "name": "__builtin_cexpl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 110, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_cexpl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_view", 
+    {
+      "name": "layer_get_view", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 434, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_get_view", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(box)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_set_pixel_mask_from", 
+    {
+      "name": "tile_set_pixel_mask_from", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 470, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_set_pixel_mask_from", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isless", 
+    {
+      "name": "__builtin_isless", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 141, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isless", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "render_set_bg_color", 
+    {
+      "name": "render_set_bg_color", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 418, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "render_set_bg_color", 
+      "arguments": [
+        [
+          "arg0", 
+          "char"
+        ], 
+        [
+          "arg1", 
+          "char"
+        ], 
+        [
+          "arg2", 
+          "char"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isnormal", 
+    {
+      "name": "__builtin_isnormal", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 138, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isnormal", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_asinf", 
+    {
+      "name": "__builtin_asinf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 28, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_asinf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_asinl", 
+    {
+      "name": "__builtin_asinl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 29, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_asinl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_popcount", 
+    {
+      "name": "__builtin_popcount", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 99, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "int", 
+      "tag": "__builtin_popcount", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_get_collides", 
+    {
+      "name": "tile_get_collides", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 465, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "tile_get_collides", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_reset", 
+    {
+      "name": "tile_reset", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 472, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_reset", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_nansf", 
+    {
+      "name": "__builtin_nansf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 22, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_nansf", 
+      "arguments": [
+        [
+          "str", 
+          "POINTER(CONST(char))"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_nansl", 
+    {
+      "name": "__builtin_nansl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 23, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_nansl", 
+      "arguments": [
+        [
+          "str", 
+          "POINTER(CONST(char))"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_floorf", 
+    {
+      "name": "__builtin_floorf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 52, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_floorf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_floorl", 
+    {
+      "name": "__builtin_floorl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 53, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_floorl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctanf", 
+    {
+      "name": "__builtin_ctanf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 123, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_ctanf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctanh", 
+    {
+      "name": "__builtin_ctanh", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 127, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_ctanh", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctanl", 
+    {
+      "name": "__builtin_ctanl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 125, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_ctanl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_delete", 
+    {
+      "name": "sprite_delete", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 477, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_delete", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_carg", 
+    {
+      "name": "__builtin_carg", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 94, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_carg", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_clog", 
+    {
+      "name": "__builtin_clog", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 112, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_clog", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_position", 
+    {
+      "name": "sprite_set_position", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 486, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_position", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_logf", 
+    {
+      "name": "__builtin_logf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 66, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_logf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_logl", 
+    {
+      "name": "__builtin_logl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 67, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_logl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_fabs", 
+    {
+      "name": "__builtin_fabs", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 48, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_fabs", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_expf", 
+    {
+      "name": "__builtin_expf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 46, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_expf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_expl", 
+    {
+      "name": "__builtin_expl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 47, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_expl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_add", 
+    {
+      "name": "list_add", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 407, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "list_add", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isunordered", 
+    {
+      "name": "__builtin_isunordered", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 144, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isunordered", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "graphics_close", 
+    {
+      "name": "graphics_close", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 397, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "graphics_close", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_set_position", 
+    {
+      "name": "song_set_position", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 511, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_set_position", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_map", 
+    {
+      "name": "layer_set_map", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 436, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_map", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(map)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csqrt", 
+    {
+      "name": "__builtin_csqrt", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 121, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_csqrt", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sin", 
+    {
+      "name": "__builtin_sin", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 75, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_sin", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ldexpf", 
+    {
+      "name": "__builtin_ldexpf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 60, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_ldexpf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ldexpl", 
+    {
+      "name": "__builtin_ldexpl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 61, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_ldexpl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_reset_tiles", 
+    {
+      "name": "map_reset_tiles", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 458, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_reset_tiles", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_islessequal", 
+    {
+      "name": "__builtin_islessequal", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 142, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_islessequal", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_set_tile", 
+    {
+      "name": "map_set_tile", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 454, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_set_tile", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(tile)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_tanf", 
+    {
+      "name": "__builtin_tanf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 85, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_tanf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_tanh", 
+    {
+      "name": "__builtin_tanh", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 86, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_tanh", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_tanl", 
+    {
+      "name": "__builtin_tanl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 89, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_tanl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ceil", 
+    {
+      "name": "__builtin_ceil", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 36, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_ceil", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_fmodf", 
+    {
+      "name": "__builtin_fmodf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 54, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_fmodf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_fmodl", 
+    {
+      "name": "__builtin_fmodl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 55, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_fmodl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "inspect_line_of_sight", 
+    {
+      "name": "inspect_line_of_sight", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 526, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "inspect_line_of_sight", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "int"
+        ], 
+        [
+          "arg4", 
+          "int"
+        ], 
+        [
+          "arg5", 
+          "POINTER(sprite)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "render_set_overdraw", 
+    {
+      "name": "render_set_overdraw", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 419, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "render_set_overdraw", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "motion_exec_list", 
+    {
+      "name": "motion_exec_list", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 535, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "motion_exec_list", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_return", 
+    {
+      "name": "__builtin_return", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 13, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "void", 
+      "tag": "__builtin_return", 
+      "arguments": [
+        [
+          "RESULT", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "inspect_obscured_tiles", 
+    {
+      "name": "inspect_obscured_tiles", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 525, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "inspect_obscured_tiles", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(map_fragment)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_add_frame", 
+    {
+      "name": "sprite_add_frame", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 491, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_add_frame", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_delete", 
+    {
+      "name": "list_delete", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 406, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "list_delete", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sqrt", 
+    {
+      "name": "__builtin_sqrt", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 81, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_sqrt", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cpow", 
+    {
+      "name": "__builtin_cpow", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 130, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_cpow", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ], 
+        [
+          "arg1", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_coshf", 
+    {
+      "name": "__builtin_coshf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 42, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_coshf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_coshl", 
+    {
+      "name": "__builtin_coshl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 43, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_coshl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_find", 
+    {
+      "name": "list_find", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 413, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "list_find", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_camera", 
+    {
+      "name": "layer_set_camera", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 442, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_camera", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cexp", 
+    {
+      "name": "__builtin_cexp", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 109, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_cexp", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_atan2", 
+    {
+      "name": "__builtin_atan2", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 31, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_atan2", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ], 
+        [
+          "arg1", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_memchr", 
+    {
+      "name": "__builtin_memchr", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 12, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "POINTER(void)", 
+      "tag": "__builtin_memchr", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(CONST(void))"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "unsigned int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_length", 
+    {
+      "name": "list_length", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 412, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "list_length", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_atanf", 
+    {
+      "name": "__builtin_atanf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 34, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_atanf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_atanl", 
+    {
+      "name": "__builtin_atanl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 35, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_atanl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctan", 
+    {
+      "name": "__builtin_ctan", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 124, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_ctan", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_log", 
+    {
+      "name": "__builtin_log", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 62, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_log", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "delay", 
+    {
+      "name": "delay", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 565, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "delay", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_set_mask_from", 
+    {
+      "name": "frame_set_mask_from", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 556, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "frame_set_mask_from", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_set_data", 
+    {
+      "name": "map_set_data", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 455, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_set_data", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(short int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_pop", 
+    {
+      "name": "list_pop", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 410, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(void)", 
+      "tag": "list_pop", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_visible", 
+    {
+      "name": "layer_get_visible", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 432, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_get_visible", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isfinite", 
+    {
+      "name": "__builtin_isfinite", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 135, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isfinite", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_resume", 
+    {
+      "name": "song_resume", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 510, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_resume", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_asin", 
+    {
+      "name": "__builtin_asin", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 27, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_asin", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "init_brick", 
+    {
+      "name": "init_brick", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 572, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "init_brick", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_add_subframe", 
+    {
+      "name": "sprite_add_subframe", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 493, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_add_subframe", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_set_anim_type", 
+    {
+      "name": "tile_set_anim_type", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 468, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_set_anim_type", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_frexp", 
+    {
+      "name": "__builtin_frexp", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 56, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_frexp", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "graphics_open", 
+    {
+      "name": "graphics_open", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 396, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "graphics_open", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "int"
+        ], 
+        [
+          "arg4", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isgreaterequal", 
+    {
+      "name": "__builtin_isgreaterequal", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 140, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isgreaterequal", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_empty", 
+    {
+      "name": "list_empty", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 405, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "list_empty", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_play", 
+    {
+      "name": "sound_play", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 500, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sound_play", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sound)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_sorting", 
+    {
+      "name": "layer_get_sorting", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 433, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_get_sorting", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_copy", 
+    {
+      "name": "layer_copy", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 428, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_copy", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "string_set_text", 
+    {
+      "name": "string_set_text", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 549, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "string_set_text", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(string)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_log10f", 
+    {
+      "name": "__builtin_log10f", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 64, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_log10f", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_log10l", 
+    {
+      "name": "__builtin_log10l", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 65, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_log10l", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctzl", 
+    {
+      "name": "__builtin_ctzl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 97, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "int", 
+      "tag": "__builtin_ctzl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "collision_with_map", 
+    {
+      "name": "collision_with_map", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 531, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "collision_with_map", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "POINTER(map_collision)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "font_from_buffer", 
+    {
+      "name": "font_from_buffer", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 541, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "font_from_buffer", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(unsigned char)"
+        ], 
+        [
+          "arg3", 
+          "POINTER(color)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_read_key", 
+    {
+      "name": "io_read_key", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 521, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "io_read_key", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_delete", 
+    {
+      "name": "frame_delete", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 554, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "frame_delete", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_powif", 
+    {
+      "name": "__builtin_powif", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 73, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_powif", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_powil", 
+    {
+      "name": "__builtin_powil", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 74, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_powil", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_modff", 
+    {
+      "name": "__builtin_modff", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 68, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_modff", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "POINTER(float)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_exp", 
+    {
+      "name": "__builtin_exp", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 45, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_exp", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_modfl", 
+    {
+      "name": "__builtin_modfl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 69, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_modfl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "POINTER(long double)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_load_raw", 
+    {
+      "name": "sound_load_raw", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 499, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(sound)", 
+      "tag": "sound_load_raw", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(unsigned char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_prefetch", 
+    {
+      "name": "__builtin_prefetch", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 17, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "void", 
+      "tag": "__builtin_prefetch", 
+      "arguments": [
+        [
+          "ADDR", 
+          "POINTER(CONST(void))"
+        ]
+      ], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_prepend", 
+    {
+      "name": "list_prepend", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 408, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "list_prepend", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_tan", 
+    {
+      "name": "__builtin_tan", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 84, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_tan", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_fabsf", 
+    {
+      "name": "__builtin_fabsf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 49, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_fabsf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_fabsl", 
+    {
+      "name": "__builtin_fabsl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 50, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_fabsl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_play_from_buffer", 
+    {
+      "name": "song_play_from_buffer", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 507, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_play_from_buffer", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(unsigned char)"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "quit_brick", 
+    {
+      "name": "quit_brick", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 573, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "quit_brick", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_assign", 
+    {
+      "name": "io_assign", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 520, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "io_assign", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "string_set_font", 
+    {
+      "name": "string_set_font", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 547, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "string_set_font", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(string)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_velocity", 
+    {
+      "name": "sprite_set_velocity", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 487, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_velocity", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_inf", 
+    {
+      "name": "__builtin_inf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 18, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_inf", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_adjust_vol", 
+    {
+      "name": "sound_adjust_vol", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 502, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sound_adjust_vol", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_z_hint", 
+    {
+      "name": "sprite_set_z_hint", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 484, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_z_hint", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_get_z_hint", 
+    {
+      "name": "sprite_get_z_hint", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 479, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_get_z_hint", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_mouse", 
+    {
+      "name": "io_mouse", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 516, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "io_mouse", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(mouse)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_frame_address", 
+    {
+      "name": "__builtin_frame_address", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 15, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "POINTER(void)", 
+      "tag": "__builtin_frame_address", 
+      "arguments": [
+        [
+          "LEVEL", 
+          "unsigned int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_create", 
+    {
+      "name": "sprite_create", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 475, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(sprite)", 
+      "tag": "sprite_create", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cabs", 
+    {
+      "name": "__builtin_cabs", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 91, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_cabs", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_set_pixel_mask", 
+    {
+      "name": "tile_set_pixel_mask", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 469, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_set_pixel_mask", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(unsigned char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "collision_with_sprites", 
+    {
+      "name": "collision_with_sprites", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 532, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "collision_with_sprites", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "POINTER(sprite_collision)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_frame", 
+    {
+      "name": "sprite_set_frame", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 483, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_frame", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_sprite_list", 
+    {
+      "name": "layer_set_sprite_list", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 435, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_sprite_list", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_atan2f", 
+    {
+      "name": "__builtin_atan2f", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 32, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_atan2f", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_atan2l", 
+    {
+      "name": "__builtin_atan2l", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 33, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_atan2l", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isinf", 
+    {
+      "name": "__builtin_isinf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 136, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isinf", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_halt", 
+    {
+      "name": "sound_halt", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 501, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sound_halt", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_delete", 
+    {
+      "name": "tile_delete", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 462, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_delete", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ccoshf", 
+    {
+      "name": "__builtin_ccoshf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 105, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_ccoshf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ccoshl", 
+    {
+      "name": "__builtin_ccoshl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 107, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_ccoshl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_has_quit", 
+    {
+      "name": "io_has_quit", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 518, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "io_has_quit", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "event_message", 
+    {
+      "name": "event_message", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 569, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "event_message", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_sort", 
+    {
+      "name": "list_sort", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 414, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "list_sort", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(FUNCTIONTYPE(int, POINTER(void), POINTER(void)))"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_shift", 
+    {
+      "name": "list_shift", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 409, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(void)", 
+      "tag": "list_shift", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "font_from_disk", 
+    {
+      "name": "font_from_disk", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 540, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "font_from_disk", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(color)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_get_velocity", 
+    {
+      "name": "sprite_get_velocity", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 482, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_get_velocity", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_atan", 
+    {
+      "name": "__builtin_atan", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 30, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_atan", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sinhf", 
+    {
+      "name": "__builtin_sinhf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 78, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_sinhf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sinhl", 
+    {
+      "name": "__builtin_sinhl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 79, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_sinhl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "motion_exec_single", 
+    {
+      "name": "motion_exec_single", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 534, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "motion_exec_single", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sqrtf", 
+    {
+      "name": "__builtin_sqrtf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 82, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_sqrtf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sqrtl", 
+    {
+      "name": "__builtin_sqrtl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 83, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_sqrtl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_frexpf", 
+    {
+      "name": "__builtin_frexpf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 57, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_frexpf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_frexpl", 
+    {
+      "name": "__builtin_frexpl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 58, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_frexpl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cpowf", 
+    {
+      "name": "__builtin_cpowf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 129, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_cpowf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ], 
+        [
+          "arg1", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_get_frame", 
+    {
+      "name": "sprite_get_frame", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 478, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_get_frame", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cpowl", 
+    {
+      "name": "__builtin_cpowl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 131, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_cpowl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ], 
+        [
+          "arg1", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "inspect_near_point", 
+    {
+      "name": "inspect_near_point", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 528, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(list)", 
+      "tag": "inspect_near_point", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_string_list", 
+    {
+      "name": "layer_get_string_list", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 431, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(list)", 
+      "tag": "layer_get_string_list", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_create", 
+    {
+      "name": "list_create", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 404, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(list)", 
+      "tag": "list_create", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "string_delete", 
+    {
+      "name": "string_delete", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 546, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "string_delete", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(string)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_add_frame_data", 
+    {
+      "name": "sprite_add_frame_data", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 492, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_add_frame_data", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "int"
+        ], 
+        [
+          "arg4", 
+          "POINTER(void)"
+        ], 
+        [
+          "arg5", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "inspect_adjacent_tiles", 
+    {
+      "name": "inspect_adjacent_tiles", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 524, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "inspect_adjacent_tiles", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "POINTER(map_fragment)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_play_from_disk", 
+    {
+      "name": "song_play_from_disk", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 506, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_play_from_disk", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_delete", 
+    {
+      "name": "map_delete", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 448, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_delete", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_tanhf", 
+    {
+      "name": "__builtin_tanhf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 87, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_tanhf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_tanhl", 
+    {
+      "name": "__builtin_tanhl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 88, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_tanhl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cabsf", 
+    {
+      "name": "__builtin_cabsf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 90, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_cabsf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cabsl", 
+    {
+      "name": "__builtin_cabsl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 92, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_cabsl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_powf", 
+    {
+      "name": "__builtin_powf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 70, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_powf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ], 
+        [
+          "arg1", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_powi", 
+    {
+      "name": "__builtin_powi", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 72, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_powi", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_powl", 
+    {
+      "name": "__builtin_powl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 71, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_powl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ], 
+        [
+          "arg1", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "graphics_info", 
+    {
+      "name": "graphics_info", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 395, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "graphics_info", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_pause", 
+    {
+      "name": "song_pause", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 509, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_pause", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ccos", 
+    {
+      "name": "__builtin_ccos", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 103, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_ccos", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_load_from_buffer", 
+    {
+      "name": "sound_load_from_buffer", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 498, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(sound)", 
+      "tag": "sound_load_from_buffer", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(unsigned char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_pixel_mask_from", 
+    {
+      "name": "sprite_set_pixel_mask_from", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 490, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_pixel_mask_from", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_collides", 
+    {
+      "name": "sprite_set_collides", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 485, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_collides", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_set_single", 
+    {
+      "name": "map_set_single", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 456, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_set_single", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "short int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "list_remove", 
+    {
+      "name": "list_remove", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 411, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "list_remove", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(void)"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_convert", 
+    {
+      "name": "frame_convert", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 558, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(frame)", 
+      "tag": "frame_convert", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_expect", 
+    {
+      "name": "__builtin_expect", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 16, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long int", 
+      "tag": "__builtin_expect", 
+      "arguments": [
+        [
+          "EXP", 
+          "long int"
+        ], 
+        [
+          "C", 
+          "long int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "font_add", 
+    {
+      "name": "font_add", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 538, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "font_add", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "POINTER(unsigned char)"
+        ], 
+        [
+          "arg4", 
+          "POINTER(color)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "audio_close", 
+    {
+      "name": "audio_close", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 401, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "audio_close", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_popcountl", 
+    {
+      "name": "__builtin_popcountl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 100, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "int", 
+      "tag": "__builtin_popcountl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_get_position", 
+    {
+      "name": "sprite_get_position", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 481, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_get_position", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_animate_tiles", 
+    {
+      "name": "map_animate_tiles", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 457, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_animate_tiles", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_load_program", 
+    {
+      "name": "sprite_load_program", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 494, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_load_program", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_create", 
+    {
+      "name": "frame_create", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 552, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(frame)", 
+      "tag": "frame_create", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "POINTER(void)"
+        ], 
+        [
+          "arg4", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_adjust_pan", 
+    {
+      "name": "sound_adjust_pan", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 503, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sound_adjust_pan", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_adjust_vol", 
+    {
+      "name": "song_adjust_vol", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 512, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_adjust_vol", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_from_disk", 
+    {
+      "name": "frame_from_disk", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 560, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(frame)", 
+      "tag": "frame_from_disk", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(color)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "song_stop", 
+    {
+      "name": "song_stop", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 508, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "song_stop", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "audio_open", 
+    {
+      "name": "audio_open", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 400, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "audio_open", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "render_to_disk", 
+    {
+      "name": "render_to_disk", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 421, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "render_to_disk", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_inff", 
+    {
+      "name": "__builtin_inff", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 19, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_inff", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_from_buffer", 
+    {
+      "name": "frame_from_buffer", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 561, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(frame)", 
+      "tag": "frame_from_buffer", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(unsigned char)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(color)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_infl", 
+    {
+      "name": "__builtin_infl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 20, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_infl", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_adjust_camera", 
+    {
+      "name": "layer_adjust_camera", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 443, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_adjust_camera", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cos", 
+    {
+      "name": "__builtin_cos", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 39, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_cos", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctz", 
+    {
+      "name": "__builtin_ctz", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 96, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "int", 
+      "tag": "__builtin_ctz", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_return_address", 
+    {
+      "name": "__builtin_return_address", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 14, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "POINTER(void)", 
+      "tag": "__builtin_return_address", 
+      "arguments": [
+        [
+          "LEVEL", 
+          "unsigned int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_pixel_mask", 
+    {
+      "name": "sprite_set_pixel_mask", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 489, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_pixel_mask", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(unsigned char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isnan", 
+    {
+      "name": "__builtin_isnan", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 137, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isnan", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_string_list", 
+    {
+      "name": "layer_set_string_list", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 437, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_string_list", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(list)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_set_tile_size", 
+    {
+      "name": "map_set_tile_size", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 452, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_set_tile_size", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csinhf", 
+    {
+      "name": "__builtin_csinhf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 117, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_csinhf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csinhl", 
+    {
+      "name": "__builtin_csinhl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 119, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_csinhl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csqrtf", 
+    {
+      "name": "__builtin_csqrtf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 120, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_csqrtf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csqrtl", 
+    {
+      "name": "__builtin_csqrtl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 122, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_csqrtl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_get_collides", 
+    {
+      "name": "sprite_get_collides", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 480, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "sprite_get_collides", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_remove", 
+    {
+      "name": "layer_remove", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 427, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_remove", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_set_size", 
+    {
+      "name": "map_set_size", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 453, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_set_size", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_sprite_list", 
+    {
+      "name": "layer_get_sprite_list", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 429, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(list)", 
+      "tag": "layer_get_sprite_list", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_view", 
+    {
+      "name": "layer_set_view", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 440, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_view", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(box)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_floor", 
+    {
+      "name": "__builtin_floor", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 51, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_floor", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ldexp", 
+    {
+      "name": "__builtin_ldexp", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 59, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_ldexp", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_copy", 
+    {
+      "name": "frame_copy", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 553, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(frame)", 
+      "tag": "frame_copy", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_grab", 
+    {
+      "name": "io_grab", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 517, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "io_grab", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_create", 
+    {
+      "name": "tile_create", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 461, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(tile)", 
+      "tag": "tile_create", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_get_tile_size", 
+    {
+      "name": "map_get_tile_size", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 449, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "map_get_tile_size", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_get_anim_type", 
+    {
+      "name": "tile_get_anim_type", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 466, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "tile_get_anim_type", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_set_bounding_box", 
+    {
+      "name": "sprite_set_bounding_box", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 488, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "sprite_set_bounding_box", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(box)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_fetch", 
+    {
+      "name": "io_fetch", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 515, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "io_fetch", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(input)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ccosf", 
+    {
+      "name": "__builtin_ccosf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 102, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_ccosf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ccosh", 
+    {
+      "name": "__builtin_ccosh", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 106, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_ccosh", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ccosl", 
+    {
+      "name": "__builtin_ccosl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 104, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_ccosl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_camera", 
+    {
+      "name": "layer_get_camera", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 441, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_get_camera", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_islessgreater", 
+    {
+      "name": "__builtin_islessgreater", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 143, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_islessgreater", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_get_tile", 
+    {
+      "name": "map_get_tile", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 451, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "map_get_tile", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "POINTER(POINTER(tile))"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "render_set_bg_fill", 
+    {
+      "name": "render_set_bg_fill", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 417, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "render_set_bg_fill", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sprite_copy", 
+    {
+      "name": "sprite_copy", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 476, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(sprite)", 
+      "tag": "sprite_copy", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(sprite)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_add_frame", 
+    {
+      "name": "tile_add_frame", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 463, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "tile_add_frame", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(frame)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctanhf", 
+    {
+      "name": "__builtin_ctanhf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 126, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_ctanhf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctanhl", 
+    {
+      "name": "__builtin_ctanhl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 128, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_ctanhl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "render_display", 
+    {
+      "name": "render_display", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 420, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "render_display", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "string_create", 
+    {
+      "name": "string_create", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 545, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(string)", 
+      "tag": "string_create", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_count", 
+    {
+      "name": "layer_count", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 424, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "layer_count", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ceilf", 
+    {
+      "name": "__builtin_ceilf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 37, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_ceilf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ceill", 
+    {
+      "name": "__builtin_ceill", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 38, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_ceill", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "event_add", 
+    {
+      "name": "event_add", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 568, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "event_add", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "event"
+        ], 
+        [
+          "arg3", 
+          "POINTER(void)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_empty", 
+    {
+      "name": "map_empty", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 447, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "map_empty", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(map)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_get_map", 
+    {
+      "name": "layer_get_map", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 430, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(map)", 
+      "tag": "layer_get_map", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csinf", 
+    {
+      "name": "__builtin_csinf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 114, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex float", 
+      "tag": "__builtin_csinf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csinh", 
+    {
+      "name": "__builtin_csinh", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 118, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_csinh", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csinl", 
+    {
+      "name": "__builtin_csinl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 116, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex long double", 
+      "tag": "__builtin_csinl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_acos", 
+    {
+      "name": "__builtin_acos", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 24, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_acos", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "tile_animate", 
+    {
+      "name": "tile_animate", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 471, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "tile_animate", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(tile)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_ctzll", 
+    {
+      "name": "__builtin_ctzll", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 98, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "int", 
+      "tag": "__builtin_ctzll", 
+      "arguments": [
+        [
+          "arg0", 
+          "long long int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_visible", 
+    {
+      "name": "layer_set_visible", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 438, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_visible", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cargf", 
+    {
+      "name": "__builtin_cargf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 93, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_cargf", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cargl", 
+    {
+      "name": "__builtin_cargl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 95, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_cargl", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "sound_load_from_disk", 
+    {
+      "name": "sound_load_from_disk", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 497, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(sound)", 
+      "tag": "sound_load_from_disk", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "map_create", 
+    {
+      "name": "map_create", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 446, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(map)", 
+      "tag": "map_create", 
+      "arguments": [], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cosf", 
+    {
+      "name": "__builtin_cosf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 40, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_cosf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cosh", 
+    {
+      "name": "__builtin_cosh", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 41, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_cosh", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_cosl", 
+    {
+      "name": "__builtin_cosl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 44, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_cosl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "io_wait", 
+    {
+      "name": "io_wait", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 519, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "io_wait", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_set_mask", 
+    {
+      "name": "frame_set_mask", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 555, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "frame_set_mask", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(unsigned char)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "inspect_in_frame", 
+    {
+      "name": "inspect_in_frame", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 527, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(list)", 
+      "tag": "inspect_in_frame", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(list)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(box)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_isgreater", 
+    {
+      "name": "__builtin_isgreater", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 139, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "bool", 
+      "tag": "__builtin_isgreater", 
+      "arguments": [], 
+      "varargs": true, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "frame_slice", 
+    {
+      "name": "frame_slice", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 557, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "POINTER(frame)", 
+      "tag": "frame_slice", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ], 
+        [
+          "arg3", 
+          "int"
+        ], 
+        [
+          "arg4", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_set_sorting", 
+    {
+      "name": "layer_set_sorting", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 439, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_set_sorting", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "string_set_position", 
+    {
+      "name": "string_set_position", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 548, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "string_set_position", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(string)"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ], 
+        [
+          "arg2", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sinf", 
+    {
+      "name": "__builtin_sinf", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 76, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "float", 
+      "tag": "__builtin_sinf", 
+      "arguments": [
+        [
+          "arg0", 
+          "float"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sinh", 
+    {
+      "name": "__builtin_sinh", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 77, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "double", 
+      "tag": "__builtin_sinh", 
+      "arguments": [
+        [
+          "arg0", 
+          "double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_sinl", 
+    {
+      "name": "__builtin_sinl", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 80, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "long double", 
+      "tag": "__builtin_sinl", 
+      "arguments": [
+        [
+          "arg0", 
+          "long double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "__builtin_csin", 
+    {
+      "name": "__builtin_csin", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 115, 
+        "file": "/usr/share/gccxml-0.9/GCC/4.3/gccxml_builtins.h"
+      }, 
+      "rettype": "complex double", 
+      "tag": "__builtin_csin", 
+      "arguments": [
+        [
+          "arg0", 
+          "complex double"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
+    "layer_reorder", 
+    {
+      "name": "layer_reorder", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 426, 
+        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+      }, 
+      "rettype": "void", 
+      "tag": "layer_reorder", 
+      "arguments": [
+        [
+          "arg0", 
+          "int"
+        ], 
+        [
+          "arg1", 
+          "int"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ]
+]

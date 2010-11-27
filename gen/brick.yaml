@@ -1,0 +1,134 @@
+Files:
+    - brick.json
+
+Objects:
+    Brick:
+        type:
+        tag: 
+        static_methods:
+            - !by_name '(init|quit)_brick'
+            - !by_name '(delay)'
+    Graphics:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'graphics_(.*)'
+    Audio:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'audio_(.*)'
+    List:
+        tag: POINTER(list)
+        type: StructList*
+        methods:
+            - !by_name 'list_(.*)'
+        static_methods:
+            - !by_name 'list_(create)'
+    Render:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'render_(.*)'
+    Layer:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'layer_(.*)'
+    Map:
+        type: StructMap*
+        tag: POINTER(map)
+        methods:
+            - !by_name 'map_(.*)'
+        static_methods:
+            - !by_name 'map_(create)'
+    Frame:
+        type: StructFrame*
+        tag: POINTER(frame)
+        methods:
+            - !by_name 'frame_(.*)'
+        static_methods:
+            - !by_name 'frame_(create)'
+    Tile:
+        type: StructTile*
+        tag: POINTER(tile)
+        methods:
+            - !by_name 'tile_(.*)'
+        static_methods:
+            - !by_name 'tile_(create)'
+    Sprite:
+        type: StructSprite*
+        tag: POINTER(sprite)
+        methods:
+            - !by_name 'sprite_(.*)'
+        static_methods:
+            - !by_name 'sprite_(create)'
+    Motion:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'motion_(.*)'
+    Sound:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'sound_(.*)'
+    Song:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'song_(.*)'
+    IO:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'io_(.*)'
+    Inspect:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'inspect_(.*)'
+    Collision:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'collision_(.*)'
+    Font:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'font_(.*)'
+    BString:
+        type: StructString_*
+        tag: POINTER(string)
+        methods:
+            - !by_name 'string_(.*)'
+        static_methods:
+            - !by_name 'string_(create)'
+    Event:
+        type:
+        tag:
+        static_methods:
+            - !by_name 'event_(.*)'
+
+Errors:
+    names:
+        - ERR_CANT_REOPEN 
+        - ERR_BAD_MODE 
+        - ERR_BAD_FILE 
+        - ERR_SDL_FAILED 
+        - ERR_SDL_VIDEO_FAILED 
+        - ERR_SDL_MIXER_FAILED 
+        - ERR_BAD_FRAME_TYPE 
+        - ERR_INVALID_FILE 
+        - ERR_BAD_INST 
+        - ERR_BAD_VAR 
+        - ERR_BAD_ARG 
+        - ERR_TOO_LONG 
+        - ERR_BAD_LIST
+        - ERR_BAD_INST_BC
+        - ERR_BAD_ARG_BC
+    functions:
+        - !by_name '(graphics_open|layer_get_camera|layer_get_view|map_get_size|map_get_tile_size)'
+        - !by_name '(map_get_tile|tile_get_collides|tile_get_anim_type|sprite_get_frame|sprite_get_z_hint)'
+        - !by_name '(sprite_get_position|sprite_get_velocity|motion_exec_single|motion_exec_list)'
