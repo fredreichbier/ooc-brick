@@ -31,10 +31,12 @@ Objects:
         static_methods:
             - !by_name 'render_(.*)'
     Layer:
-        type:
-        tag:
-        static_methods:
+        type: Int
+        tag: Int
+        methods:
             - !by_name 'layer_(.*)'
+        static_methods:
+            - !by_name 'layer_(add|count)'
     Map:
         type: StructMap*
         tag: POINTER(map)
@@ -48,7 +50,7 @@ Objects:
         methods:
             - !by_name 'frame_(.*)'
         static_methods:
-            - !by_name 'frame_(create)'
+            - !by_name 'frame_(create|from_disk|from_buffer)'
     Tile:
         type: StructTile*
         tag: POINTER(tile)

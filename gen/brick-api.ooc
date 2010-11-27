@@ -95,31 +95,31 @@ Map: cover from StructMap* {
     create: extern(map_create) static func -> Map
 }
 
-Layer: cover {
+Layer: cover from Int {
     add: extern(layer_add) static func -> Int
-    getView: static func (arg0: Int, arg1: Box*) -> Int {
-        return _checkError(layer_get_view(arg0, arg1))
+    getView: func (arg1: Box*) -> Int {
+        return _checkError(layer_get_view(this, arg1))
     }
-    setMap: extern(layer_set_map) static func (arg0: Int, arg1: Map)
-    setCamera: extern(layer_set_camera) static func (arg0: Int, arg1: Int, arg2: Int)
-    getVisible: extern(layer_get_visible) static func (arg0: Int) -> Int
-    getSorting: extern(layer_get_sorting) static func (arg0: Int) -> Int
-    copy: extern(layer_copy) static func (arg0: Int) -> Int
-    setSpriteList: extern(layer_set_sprite_list) static func (arg0: Int, arg1: List)
-    getStringList: extern(layer_get_string_list) static func (arg0: Int) -> List
-    adjustCamera: extern(layer_adjust_camera) static func (arg0: Int, arg1: Int, arg2: Int)
-    setStringList: extern(layer_set_string_list) static func (arg0: Int, arg1: List)
-    remove: extern(layer_remove) static func (arg0: Int)
-    getSpriteList: extern(layer_get_sprite_list) static func (arg0: Int) -> List
-    setView: extern(layer_set_view) static func (arg0: Int, arg1: Box*)
-    getCamera: static func (arg0: Int, arg1: Int*, arg2: Int*) -> Int {
-        return _checkError(layer_get_camera(arg0, arg1, arg2))
+    setMap: extern(layer_set_map) func (arg1: Map)
+    setCamera: extern(layer_set_camera) func (arg1: Int, arg2: Int)
+    getVisible: extern(layer_get_visible) func -> Int
+    getSorting: extern(layer_get_sorting) func -> Int
+    copy: extern(layer_copy) func -> Int
+    setSpriteList: extern(layer_set_sprite_list) func (arg1: List)
+    getStringList: extern(layer_get_string_list) func -> List
+    adjustCamera: extern(layer_adjust_camera) func (arg1: Int, arg2: Int)
+    setStringList: extern(layer_set_string_list) func (arg1: List)
+    remove: extern(layer_remove) func
+    getSpriteList: extern(layer_get_sprite_list) func -> List
+    setView: extern(layer_set_view) func (arg1: Box*)
+    getCamera: func (arg1: Int*, arg2: Int*) -> Int {
+        return _checkError(layer_get_camera(this, arg1, arg2))
     }
     count: extern(layer_count) static func -> Int
-    getMap: extern(layer_get_map) static func (arg0: Int) -> Map
-    setVisible: extern(layer_set_visible) static func (arg0: Int, arg1: Int)
-    setSorting: extern(layer_set_sorting) static func (arg0: Int, arg1: Int)
-    reorder: extern(layer_reorder) static func (arg0: Int, arg1: Int)
+    getMap: extern(layer_get_map) func -> Map
+    setVisible: extern(layer_set_visible) func (arg1: Int)
+    setSorting: extern(layer_set_sorting) func (arg1: Int)
+    reorder: extern(layer_reorder) func (arg1: Int)
 }
 
 Sprite: cover from StructSprite* {
@@ -176,8 +176,8 @@ Frame: cover from StructFrame* {
     delete: extern(frame_delete) func
     convert: extern(frame_convert) func (arg1: Int, arg2: Void*) -> Frame
     create: extern(frame_create) static func (arg0: Int, arg1: Int, arg2: Int, arg3: Void*, arg4: Void*) -> Frame
-    fromDisk: extern(frame_from_disk) func (arg1: Color*) -> Frame
-    fromBuffer: extern(frame_from_buffer) func (arg1: UChar*, arg2: Color*) -> Frame
+    fromDisk: extern(frame_from_disk) static func (arg0: Char*, arg1: Color*) -> Frame
+    fromBuffer: extern(frame_from_buffer) static func (arg0: Int, arg1: UChar*, arg2: Color*) -> Frame
     copy: extern(frame_copy) func -> Frame
     setMask: extern(frame_set_mask) func (arg1: UChar*)
     slice: extern(frame_slice) func (arg1: Int, arg2: Int, arg3: Int, arg4: Int) -> Frame
