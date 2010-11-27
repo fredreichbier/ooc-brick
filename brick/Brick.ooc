@@ -533,20 +533,18 @@ MapCollision: cover from StructMapCollision
 
 Color: cover from StructColor
 
-map_get_size: extern func (arg0: Map, arg1: Int*, arg2: Int*) -> Int
-layer_get_view: extern func (arg0: Int, arg1: Box*) -> Int
+layer_get_camera: extern func (arg0: Int, arg1: Int*, arg2: Int*) -> Int
 tile_get_collides: extern func (arg0: Tile, arg1: Int*) -> Int
+map_get_tile: extern func (arg0: Map, arg1: Int, arg2: Tile*) -> Int
+map_get_tile_size: extern func (arg0: Map, arg1: Int*, arg2: Int*) -> Int
+tile_get_anim_type: extern func (arg0: Tile, arg1: Int*) -> Int
+map_get_size: extern func (arg0: Map, arg1: Int*, arg2: Int*) -> Int
 motion_exec_list: extern func (arg0: List) -> Int
 graphics_open: extern func (arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) -> Int
+layer_get_view: extern func (arg0: Int, arg1: Box*) -> Int
+sprite_get_position: extern func (arg0: Sprite, arg1: Int*, arg2: Int*) -> Int
 sprite_get_z_hint: extern func (arg0: Sprite, arg1: Int*) -> Int
+sprite_get_frame: extern func (arg0: Sprite, arg1: Int*) -> Int
 sprite_get_velocity: extern func (arg0: Sprite, arg1: Int*, arg2: Int*) -> Int
 motion_exec_single: extern func (arg0: Sprite) -> Int
-sprite_get_frame: extern func (arg0: Sprite, arg1: Int*) -> Int
-sprite_get_position: extern func (arg0: Sprite, arg1: Int*, arg2: Int*) -> Int
-map_get_tile_size: func (arg0: Map, arg1: Int*, arg2: Int*) -> Int {
-    return _checkError(map_get_tile_size(arg0, arg1, arg2))
-}
-tile_get_anim_type: extern func (arg0: Tile, arg1: Int*) -> Int
-layer_get_camera: extern func (arg0: Int, arg1: Int*, arg2: Int*) -> Int
-map_get_tile: extern func (arg0: Map, arg1: Int, arg2: Tile*) -> Int
 
