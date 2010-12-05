@@ -96,7 +96,7 @@ Map: cover from StructMap* {
 }
 
 Layer: cover from Int {
-    add: extern(layer_add) static func -> Int
+    add: extern(layer_add) static func -> Layer
     getView: func (arg1: Box*) -> Int {
         return _checkError(layer_get_view(this, arg1))
     }

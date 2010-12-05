@@ -1,6 +1,9 @@
 Files:
     - brick.json
 
+Scripts:
+    - process.py
+
 Objects:
     Brick:
         type:

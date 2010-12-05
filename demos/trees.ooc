@@ -29,7 +29,7 @@ main: func {
     // layers
     layers := ArrayList<Layer> new()
     for(i in 0..LAYER_CT) {
-        layer := Layer add() as Layer // TODO
+        layer := Layer add()
         layers add(layer)
         if(!i) {
             s = mountain copy()
