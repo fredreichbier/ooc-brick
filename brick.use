@@ -1,0 +1,4 @@
+Name: brick
+Description: your favorite 2d game engine
+Libs: -lbr
+SourcePath: .

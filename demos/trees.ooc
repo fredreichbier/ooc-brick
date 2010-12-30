@@ -1,3 +1,4 @@
+use brick
 import math/Random
 import structs/ArrayList
 import brick/Brick
