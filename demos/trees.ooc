@@ -22,10 +22,10 @@ main: func {
     for(i in 0..TREE_CT) {
         tree := Sprite create()
         sprites add(tree)
-        tree addFrame(Frame fromDisk(trees[i], null) convert(FRAME_LT, null))
+        tree addFrame(Frame fromDisk(trees[i], null) convert(FRAME_HL, null))
     }
     mountain := Sprite create()
-    mountain addFrame(Frame fromDisk("mountain1.png", null) convert(FRAME_LT, null))
+    mountain addFrame(Frame fromDisk("mountain1.png", null) convert(FRAME_HL, null))
     sprites add(mountain)
     // layers
     layers := ArrayList<Layer> new()

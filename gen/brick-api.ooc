@@ -175,6 +175,7 @@ Frame: cover from StructFrame* {
     setMaskFrom_: extern(frame_set_mask_from) func (arg1: Frame)
     delete: extern(frame_delete) func
     convert: extern(frame_convert) func (arg1: Int, arg2: Void*) -> Frame
+    info: extern(frame_info) func (arg1: Int*, arg2: Int*, arg3: Int*) -> Int
     create: extern(frame_create) static func (arg0: Int, arg1: Int, arg2: Int, arg3: Void*, arg4: Void*) -> Frame
     fromDisk: extern(frame_from_disk) static func (arg0: Char*, arg1: Color*) -> Frame
     fromBuffer: extern(frame_from_buffer) static func (arg0: Int, arg1: UChar*, arg2: Color*) -> Frame
@@ -215,6 +216,7 @@ BString: cover from StructString_* {
 Font: cover {
     fromBuffer: extern(font_from_buffer) static func (arg0: Char*, arg1: Int, arg2: UChar*, arg3: Color*)
     fromDisk: extern(font_from_disk) static func (arg0: Char*, arg1: Char*, arg2: Color*)
+    info: extern(font_info) static func (arg0: Char*, arg1: Int*, arg2: Int*) -> Int
     add: extern(font_add) static func (arg0: Char*, arg1: Int, arg2: Int, arg3: UChar*, arg4: Color*)
 }
 
@@ -330,6 +332,12 @@ StructFont: cover from struct font {
     chars: extern StructFrame**
 }
 
+StructLut: cover from struct lut {
+    r: extern UChar*
+    g: extern UChar*
+    b: extern UChar*
+}
+
 StructMouse: cover from struct mouse {
     x: extern Int
     y: extern Int
@@ -422,6 +430,8 @@ Input: cover from StructInput extends StructInput
 String_: cover from StructString_ extends StructString_
 
 SpriteCollision: cover from StructSpriteCollision extends StructSpriteCollision
+
+Lut: cover from StructLut extends StructLut
 
 Mouse: cover from StructMouse extends StructMouse
 

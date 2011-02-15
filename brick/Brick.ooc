@@ -1,5 +1,6 @@
 BRICK_VERSION := "5.2"
-ACCEL_BLIT := 1
+WITH_GL := 1
+WITH_SIMD := 1
 WITH_IMAGE := 1
 MAX_MCP_LENGTH := 384
 MAX_STRING_LENGTH := 240
@@ -25,13 +26,14 @@ AUDIO_OFF := 0
 AUDIO_SPEAKER := 1
 FRAME_NONE := 0
 FRAME_RGB := 1
-FRAME_DISPL := 2
-FRAME_CONVO := 3
-FRAME_LT := 4
-FRAME_BR := 5
-FRAME_CT := 6
-FRAME_SAT := 7
-FRAME_LUT := 8
+FRAME_HL := 2
+FRAME_SL := 3
+FRAME_BR := 4
+FRAME_CT := 5
+FRAME_SAT := 6
+FRAME_DISPL := 7
+FRAME_CONVO := 8
+FRAME_LUT := 9
 ANIMATE_OFF := 0
 ANIMATE_FWD := 1
 ANIMATE_REV := 2
@@ -267,6 +269,7 @@ Frame: cover from StructFrame* {
     setMaskFrom_: extern(frame_set_mask_from) func (arg1: Frame)
     delete: extern(frame_delete) func
     convert: extern(frame_convert) func (arg1: Int, arg2: Void*) -> Frame
+    info: extern(frame_info) func (arg1: Int*, arg2: Int*, arg3: Int*) -> Int
     create: extern(frame_create) static func (arg0: Int, arg1: Int, arg2: Int, arg3: Void*, arg4: Void*) -> Frame
     fromDisk: extern(frame_from_disk) static func (arg0: Char*, arg1: Color*) -> Frame
     fromBuffer: extern(frame_from_buffer) static func (arg0: Int, arg1: UChar*, arg2: Color*) -> Frame
@@ -307,6 +310,7 @@ BString: cover from StructString_* {
 Font: cover {
     fromBuffer: extern(font_from_buffer) static func (arg0: Char*, arg1: Int, arg2: UChar*, arg3: Color*)
     fromDisk: extern(font_from_disk) static func (arg0: Char*, arg1: Char*, arg2: Color*)
+    info: extern(font_info) static func (arg0: Char*, arg1: Int*, arg2: Int*) -> Int
     add: extern(font_add) static func (arg0: Char*, arg1: Int, arg2: Int, arg3: UChar*, arg4: Color*)
 }
 
@@ -422,6 +426,12 @@ StructFont: cover from struct font {
     chars: extern StructFrame**
 }
 
+StructLut: cover from struct lut {
+    r: extern UChar*
+    g: extern UChar*
+    b: extern UChar*
+}
+
 StructMouse: cover from struct mouse {
     x: extern Int
     y: extern Int
@@ -514,6 +524,8 @@ Input: cover from StructInput extends StructInput
 String_: cover from StructString_ extends StructString_
 
 SpriteCollision: cover from StructSpriteCollision extends StructSpriteCollision
+
+Lut: cover from StructLut extends StructLut
 
 Mouse: cover from StructMouse extends StructMouse
 

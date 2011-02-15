@@ -17,8 +17,8 @@
       "tag": "STRUCT(list)", 
       "class": "Struct", 
       "coord": {
-        "line": 198, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 200, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "list"
     }
@@ -56,8 +56,8 @@
       "tag": "STRUCT(convolution)", 
       "class": "Struct", 
       "coord": {
-        "line": 209, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 211, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "convolution"
     }
@@ -80,8 +80,8 @@
       "tag": "STRUCT(point)", 
       "class": "Struct", 
       "coord": {
-        "line": 202, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 204, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "point"
     }
@@ -104,8 +104,8 @@
       "tag": "STRUCT(vector)", 
       "class": "Struct", 
       "coord": {
-        "line": 203, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 205, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "vector"
     }
@@ -128,8 +128,8 @@
       "tag": "STRUCT(sound)", 
       "class": "Struct", 
       "coord": {
-        "line": 360, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 363, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "sound"
     }
@@ -182,8 +182,8 @@
       "tag": "STRUCT(input)", 
       "class": "Struct", 
       "coord": {
-        "line": 375, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 378, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "input"
     }
@@ -216,8 +216,8 @@
       "tag": "STRUCT(string)", 
       "class": "Struct", 
       "coord": {
-        "line": 318, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 321, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "string"
     }
@@ -250,8 +250,8 @@
       "tag": "STRUCT(sprite_collision)", 
       "class": "Struct", 
       "coord": {
-        "line": 341, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 344, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "sprite_collision"
     }
@@ -314,8 +314,8 @@
       "tag": "STRUCT(sprite)", 
       "class": "Struct", 
       "coord": {
-        "line": 252, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 255, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "sprite"
     }
@@ -338,8 +338,8 @@
       "tag": "STRUCT(framestack)", 
       "class": "Struct", 
       "coord": {
-        "line": 262, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 265, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "framestack"
     }
@@ -372,10 +372,39 @@
       "tag": "STRUCT(font)", 
       "class": "Struct", 
       "coord": {
-        "line": 311, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 314, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "font"
+    }
+  ], 
+  [
+    "STRUCT(lut)", 
+    {
+      "members": [
+        [
+          "r", 
+          "ARRAY(unsigned char, 256)", 
+          null
+        ], 
+        [
+          "g", 
+          "ARRAY(unsigned char, 256)", 
+          null
+        ], 
+        [
+          "b", 
+          "ARRAY(unsigned char, 256)", 
+          null
+        ]
+      ], 
+      "tag": "STRUCT(lut)", 
+      "class": "Struct", 
+      "coord": {
+        "line": 212, 
+        "file": "/usr/local/include/brick.h"
+      }, 
+      "name": "lut"
     }
   ], 
   [
@@ -401,8 +430,8 @@
       "tag": "STRUCT(mouse)", 
       "class": "Struct", 
       "coord": {
-        "line": 383, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 386, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "mouse"
     }
@@ -450,8 +479,8 @@
       "tag": "STRUCT(frame)", 
       "class": "Struct", 
       "coord": {
-        "line": 234, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 237, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "frame"
     }
@@ -479,8 +508,8 @@
       "tag": "STRUCT(element)", 
       "class": "Struct", 
       "coord": {
-        "line": 197, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 199, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "element"
     }
@@ -508,8 +537,8 @@
       "tag": "STRUCT(iterator)", 
       "class": "Struct", 
       "coord": {
-        "line": 218, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 221, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "iterator"
     }
@@ -552,8 +581,8 @@
       "tag": "STRUCT(map)", 
       "class": "Struct", 
       "coord": {
-        "line": 293, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 296, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "map"
     }
@@ -576,8 +605,8 @@
       "tag": "STRUCT(mcp)", 
       "class": "Struct", 
       "coord": {
-        "line": 210, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 213, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "mcp"
     }
@@ -600,8 +629,8 @@
       "tag": "STRUCT(dimensions)", 
       "class": "Struct", 
       "coord": {
-        "line": 204, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 206, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "dimensions"
     }
@@ -639,8 +668,8 @@
       "tag": "STRUCT(tile)", 
       "class": "Struct", 
       "coord": {
-        "line": 281, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 284, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "tile"
     }
@@ -668,8 +697,8 @@
       "tag": "STRUCT(map_fragment)", 
       "class": "Struct", 
       "coord": {
-        "line": 349, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 352, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "map_fragment"
     }
@@ -702,8 +731,8 @@
       "tag": "STRUCT(box)", 
       "class": "Struct", 
       "coord": {
-        "line": 205, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 207, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "box"
     }
@@ -731,8 +760,8 @@
       "tag": "STRUCT(map_collision)", 
       "class": "Struct", 
       "coord": {
-        "line": 334, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 337, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "map_collision"
     }
@@ -765,8 +794,8 @@
       "tag": "STRUCT(color)", 
       "class": "Struct", 
       "coord": {
-        "line": 206, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 208, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "name": "color"
     }
@@ -777,8 +806,8 @@
       "tag": "list", 
       "class": "Typedef", 
       "coord": {
-        "line": 198, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 200, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(list)"
     }
@@ -789,8 +818,8 @@
       "tag": "convolution", 
       "class": "Typedef", 
       "coord": {
-        "line": 209, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 211, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(convolution)"
     }
@@ -801,8 +830,8 @@
       "tag": "point", 
       "class": "Typedef", 
       "coord": {
-        "line": 202, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 204, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(point)"
     }
@@ -813,8 +842,8 @@
       "tag": "vector", 
       "class": "Typedef", 
       "coord": {
-        "line": 203, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 205, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(vector)"
     }
@@ -825,8 +854,8 @@
       "tag": "sound", 
       "class": "Typedef", 
       "coord": {
-        "line": 364, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 367, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(sound)"
     }
@@ -837,8 +866,8 @@
       "tag": "input", 
       "class": "Typedef", 
       "coord": {
-        "line": 380, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 383, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(input)"
     }
@@ -849,8 +878,8 @@
       "tag": "string", 
       "class": "Typedef", 
       "coord": {
-        "line": 322, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 325, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(string)"
     }
@@ -861,8 +890,8 @@
       "tag": "event", 
       "class": "Typedef", 
       "coord": {
-        "line": 211, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 214, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "POINTER(FUNCTIONTYPE(void, POINTER(void)))"
     }
@@ -873,8 +902,8 @@
       "tag": "sprite_collision", 
       "class": "Typedef", 
       "coord": {
-        "line": 346, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 349, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(sprite_collision)"
     }
@@ -885,8 +914,8 @@
       "tag": "sprite", 
       "class": "Typedef", 
       "coord": {
-        "line": 271, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 274, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(sprite)"
     }
@@ -897,10 +926,22 @@
       "tag": "font", 
       "class": "Typedef", 
       "coord": {
-        "line": 315, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 318, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(font)"
+    }
+  ], 
+  [
+    "lut", 
+    {
+      "tag": "lut", 
+      "class": "Typedef", 
+      "coord": {
+        "line": 212, 
+        "file": "/usr/local/include/brick.h"
+      }, 
+      "target": "STRUCT(lut)"
     }
   ], 
   [
@@ -909,8 +950,8 @@
       "tag": "mouse", 
       "class": "Typedef", 
       "coord": {
-        "line": 386, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 389, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(mouse)"
     }
@@ -921,8 +962,8 @@
       "tag": "frame", 
       "class": "Typedef", 
       "coord": {
-        "line": 245, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 248, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(frame)"
     }
@@ -933,8 +974,8 @@
       "tag": "element", 
       "class": "Typedef", 
       "coord": {
-        "line": 197, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 199, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(element)"
     }
@@ -945,8 +986,8 @@
       "tag": "iterator", 
       "class": "Typedef", 
       "coord": {
-        "line": 218, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 221, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(iterator)"
     }
@@ -957,8 +998,8 @@
       "tag": "map", 
       "class": "Typedef", 
       "coord": {
-        "line": 301, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 304, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(map)"
     }
@@ -969,8 +1010,8 @@
       "tag": "mcp", 
       "class": "Typedef", 
       "coord": {
-        "line": 210, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 213, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(mcp)"
     }
@@ -981,8 +1022,8 @@
       "tag": "dimensions", 
       "class": "Typedef", 
       "coord": {
-        "line": 204, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 206, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(dimensions)"
     }
@@ -993,8 +1034,8 @@
       "tag": "tile", 
       "class": "Typedef", 
       "coord": {
-        "line": 289, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 292, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(tile)"
     }
@@ -1005,8 +1046,8 @@
       "tag": "map_fragment", 
       "class": "Typedef", 
       "coord": {
-        "line": 352, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 355, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(map_fragment)"
     }
@@ -1017,8 +1058,8 @@
       "tag": "box", 
       "class": "Typedef", 
       "coord": {
-        "line": 205, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 207, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(box)"
     }
@@ -1029,8 +1070,8 @@
       "tag": "map_collision", 
       "class": "Typedef", 
       "coord": {
-        "line": 338, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 341, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(map_collision)"
     }
@@ -1041,8 +1082,8 @@
       "tag": "color", 
       "class": "Typedef", 
       "coord": {
-        "line": 206, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 208, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "target": "STRUCT(color)"
     }
@@ -1055,8 +1096,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 467, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 519, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_set_collides", 
@@ -1151,8 +1192,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 464, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 516, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "tile_add_frame_data", 
@@ -1258,8 +1299,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 425, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 463, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_add", 
@@ -1322,8 +1363,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 450, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 502, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "map_get_size", 
@@ -1399,8 +1440,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 434, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 472, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_get_view", 
@@ -1426,8 +1467,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 470, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 522, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_set_pixel_mask_from", 
@@ -1475,8 +1516,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 418, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 417, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "render_set_bg_color", 
@@ -1593,8 +1634,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 465, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 517, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "tile_get_collides", 
@@ -1620,8 +1661,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 472, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 524, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_reset", 
@@ -1804,8 +1845,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 477, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 529, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_delete", 
@@ -1873,8 +1914,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 486, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 538, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_position", 
@@ -2019,8 +2060,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 407, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 452, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "list_add", 
@@ -2064,8 +2105,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 397, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 400, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "graphics_close", 
@@ -2082,8 +2123,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 511, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 445, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_set_position", 
@@ -2105,8 +2146,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 436, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 474, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_map", 
@@ -2232,8 +2273,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 458, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 510, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_reset_tiles", 
@@ -2273,8 +2314,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 454, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 506, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_set_tile", 
@@ -2450,8 +2491,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 526, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 558, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "inspect_line_of_sight", 
@@ -2493,8 +2534,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 419, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 418, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "render_set_overdraw", 
@@ -2520,8 +2561,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 535, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 567, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "motion_exec_list", 
@@ -2566,8 +2607,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 525, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 557, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "inspect_obscured_tiles", 
@@ -2597,8 +2638,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 491, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 543, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_add_frame", 
@@ -2624,8 +2665,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 406, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 451, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "list_delete", 
@@ -2743,8 +2784,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 413, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 458, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "list_find", 
@@ -2770,8 +2811,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 442, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 480, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_camera", 
@@ -2882,8 +2923,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 412, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 457, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "list_length", 
@@ -2997,8 +3038,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 565, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 570, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "delay", 
@@ -3020,8 +3061,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 556, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 489, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "frame_set_mask_from", 
@@ -3047,8 +3088,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 455, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 507, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_set_data", 
@@ -3074,8 +3115,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 410, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 455, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(void)", 
       "tag": "list_pop", 
@@ -3097,8 +3138,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 432, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 470, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_get_visible", 
@@ -3138,8 +3179,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 510, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 444, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_resume", 
@@ -3179,8 +3220,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 572, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 577, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "init_brick", 
@@ -3197,8 +3238,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 493, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 545, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_add_subframe", 
@@ -3228,8 +3269,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 468, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 520, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_set_anim_type", 
@@ -3282,8 +3323,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 396, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 399, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "graphics_open", 
@@ -3339,8 +3380,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 405, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 450, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "list_empty", 
@@ -3362,8 +3403,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 500, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 434, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sound_play", 
@@ -3389,8 +3430,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 433, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 471, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_get_sorting", 
@@ -3412,8 +3453,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 428, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 466, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_copy", 
@@ -3435,8 +3476,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 549, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 553, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "string_set_text", 
@@ -3531,8 +3572,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 531, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 563, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "collision_with_map", 
@@ -3566,8 +3607,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 541, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 427, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "font_from_buffer", 
@@ -3601,8 +3642,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 521, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 413, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "io_read_key", 
@@ -3619,8 +3660,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 554, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 487, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "frame_delete", 
@@ -3773,8 +3814,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 499, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 433, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(sound)", 
       "tag": "sound_load_raw", 
@@ -3823,8 +3864,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 408, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 453, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "list_prepend", 
@@ -3919,8 +3960,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 507, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 441, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_play_from_buffer", 
@@ -3950,8 +3991,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 573, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 578, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "quit_brick", 
@@ -3968,8 +4009,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 520, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 412, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "io_assign", 
@@ -3995,8 +4036,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 547, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 551, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "string_set_font", 
@@ -4022,8 +4063,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 487, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 539, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_velocity", 
@@ -4071,8 +4112,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 502, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 436, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sound_adjust_vol", 
@@ -4098,8 +4139,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 484, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 536, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_z_hint", 
@@ -4125,8 +4166,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 479, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 531, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_get_z_hint", 
@@ -4152,8 +4193,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 516, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 408, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "io_mouse", 
@@ -4202,8 +4243,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 475, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 527, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(sprite)", 
       "tag": "sprite_create", 
@@ -4243,8 +4284,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 469, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 521, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_set_pixel_mask", 
@@ -4274,8 +4315,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 532, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 564, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "collision_with_sprites", 
@@ -4309,8 +4350,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 483, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 535, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_frame", 
@@ -4336,8 +4377,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 435, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 473, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_sprite_list", 
@@ -4435,8 +4476,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 501, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 435, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sound_halt", 
@@ -4458,8 +4499,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 462, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 514, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_delete", 
@@ -4527,8 +4568,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 518, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 410, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "io_has_quit", 
@@ -4545,8 +4586,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 569, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 574, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "event_message", 
@@ -4572,8 +4613,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 414, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 459, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "list_sort", 
@@ -4599,8 +4640,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 409, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 454, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(void)", 
       "tag": "list_shift", 
@@ -4622,8 +4663,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 540, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 426, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "font_from_disk", 
@@ -4653,8 +4694,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 482, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 534, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_get_velocity", 
@@ -4753,8 +4794,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 534, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 566, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "motion_exec_single", 
@@ -4903,8 +4944,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 478, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 530, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_get_frame", 
@@ -4957,8 +4998,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 528, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 560, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(list)", 
       "tag": "inspect_near_point", 
@@ -4992,8 +5033,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 431, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 469, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(list)", 
       "tag": "layer_get_string_list", 
@@ -5015,8 +5056,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 404, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 449, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(list)", 
       "tag": "list_create", 
@@ -5033,8 +5074,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 546, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 550, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "string_delete", 
@@ -5056,8 +5097,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 492, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 544, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_add_frame_data", 
@@ -5099,8 +5140,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 524, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 556, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "inspect_adjacent_tiles", 
@@ -5134,8 +5175,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 506, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 440, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_play_from_disk", 
@@ -5161,8 +5202,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 448, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 500, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_delete", 
@@ -5350,6 +5391,37 @@
     }
   ], 
   [
+    "font_info", 
+    {
+      "name": "font_info", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 423, 
+        "file": "/usr/local/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "font_info", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(char)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
     "graphics_info", 
     {
       "name": "graphics_info", 
@@ -5357,8 +5429,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 395, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 398, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "graphics_info", 
@@ -5384,8 +5456,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 509, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 443, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_pause", 
@@ -5425,8 +5497,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 498, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 432, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(sound)", 
       "tag": "sound_load_from_buffer", 
@@ -5452,8 +5524,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 490, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 542, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_pixel_mask_from", 
@@ -5483,8 +5555,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 485, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 537, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_collides", 
@@ -5510,8 +5582,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 456, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 508, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_set_single", 
@@ -5545,8 +5617,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 411, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 456, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "list_remove", 
@@ -5576,8 +5648,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 558, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 491, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(frame)", 
       "tag": "frame_convert", 
@@ -5634,8 +5706,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 538, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 424, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "font_add", 
@@ -5666,6 +5738,41 @@
     }
   ], 
   [
+    "frame_info", 
+    {
+      "name": "frame_info", 
+      "storage": [
+        "extern"
+      ], 
+      "coord": {
+        "line": 484, 
+        "file": "/usr/local/include/brick.h"
+      }, 
+      "rettype": "int", 
+      "tag": "frame_info", 
+      "arguments": [
+        [
+          "arg0", 
+          "POINTER(frame)"
+        ], 
+        [
+          "arg1", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg2", 
+          "POINTER(int)"
+        ], 
+        [
+          "arg3", 
+          "POINTER(int)"
+        ]
+      ], 
+      "varargs": false, 
+      "class": "Function"
+    }
+  ], 
+  [
     "audio_close", 
     {
       "name": "audio_close", 
@@ -5673,8 +5780,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 401, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 404, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "audio_close", 
@@ -5714,8 +5821,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 481, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 533, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_get_position", 
@@ -5745,8 +5852,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 457, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 509, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_animate_tiles", 
@@ -5768,8 +5875,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 494, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 546, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_load_program", 
@@ -5795,8 +5902,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 552, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 485, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(frame)", 
       "tag": "frame_create", 
@@ -5834,8 +5941,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 503, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 437, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sound_adjust_pan", 
@@ -5861,8 +5968,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 512, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 446, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_adjust_vol", 
@@ -5884,8 +5991,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 560, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 493, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(frame)", 
       "tag": "frame_from_disk", 
@@ -5911,8 +6018,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 508, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 442, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "song_stop", 
@@ -5934,8 +6041,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 400, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 403, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "audio_open", 
@@ -5957,8 +6064,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 421, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 420, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "render_to_disk", 
@@ -5998,8 +6105,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 561, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 494, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(frame)", 
       "tag": "frame_from_buffer", 
@@ -6047,8 +6154,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 443, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 481, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_adjust_camera", 
@@ -6147,8 +6254,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 489, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 541, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_pixel_mask", 
@@ -6196,8 +6303,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 437, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 475, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_string_list", 
@@ -6223,8 +6330,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 452, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 504, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_set_tile_size", 
@@ -6346,8 +6453,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 480, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 532, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "sprite_get_collides", 
@@ -6373,8 +6480,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 427, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 465, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_remove", 
@@ -6396,8 +6503,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 453, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 505, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_set_size", 
@@ -6427,8 +6534,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 429, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 467, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(list)", 
       "tag": "layer_get_sprite_list", 
@@ -6450,8 +6557,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 440, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 478, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_view", 
@@ -6527,8 +6634,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 553, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 486, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(frame)", 
       "tag": "frame_copy", 
@@ -6550,8 +6657,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 517, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 409, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "io_grab", 
@@ -6573,8 +6680,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 461, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 513, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(tile)", 
       "tag": "tile_create", 
@@ -6591,8 +6698,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 449, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 501, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "map_get_tile_size", 
@@ -6622,8 +6729,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 466, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 518, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "tile_get_anim_type", 
@@ -6649,8 +6756,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 488, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 540, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "sprite_set_bounding_box", 
@@ -6680,8 +6787,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 515, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 407, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "io_fetch", 
@@ -6776,8 +6883,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 441, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 479, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_get_camera", 
@@ -6825,8 +6932,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 451, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 503, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "map_get_tile", 
@@ -6856,8 +6963,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 417, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 416, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "render_set_bg_fill", 
@@ -6879,8 +6986,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 476, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 528, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(sprite)", 
       "tag": "sprite_copy", 
@@ -6902,8 +7009,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 463, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 515, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "tile_add_frame", 
@@ -6975,8 +7082,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 420, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 419, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "render_display", 
@@ -6993,8 +7100,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 545, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 549, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(string)", 
       "tag": "string_create", 
@@ -7011,8 +7118,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 424, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 462, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "layer_count", 
@@ -7075,8 +7182,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 568, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 573, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "event_add", 
@@ -7110,8 +7217,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 447, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 499, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "map_empty", 
@@ -7133,8 +7240,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 430, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 468, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(map)", 
       "tag": "layer_get_map", 
@@ -7248,8 +7355,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 471, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 523, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "tile_animate", 
@@ -7294,8 +7401,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 438, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 476, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_visible", 
@@ -7367,8 +7474,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 497, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 431, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(sound)", 
       "tag": "sound_load_from_disk", 
@@ -7390,8 +7497,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 446, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 498, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(map)", 
       "tag": "map_create", 
@@ -7477,8 +7584,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 519, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 411, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "int", 
       "tag": "io_wait", 
@@ -7500,8 +7607,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 555, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 488, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "frame_set_mask", 
@@ -7527,8 +7634,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 527, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 559, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(list)", 
       "tag": "inspect_in_frame", 
@@ -7572,8 +7679,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 557, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 490, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "POINTER(frame)", 
       "tag": "frame_slice", 
@@ -7611,8 +7718,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 439, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 477, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_set_sorting", 
@@ -7638,8 +7745,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 548, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 552, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "string_set_position", 
@@ -7761,8 +7868,8 @@
         "extern"
       ], 
       "coord": {
-        "line": 426, 
-        "file": "/home/fred/dev/ooc/brick/include/brick.h"
+        "line": 464, 
+        "file": "/usr/local/include/brick.h"
       }, 
       "rettype": "void", 
       "tag": "layer_reorder", 
